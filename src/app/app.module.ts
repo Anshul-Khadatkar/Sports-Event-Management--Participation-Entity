@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import {
   BrowserModule,
@@ -11,7 +12,7 @@ import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, CoreModule, AppRoutingModule],
+  imports: [BrowserModule,RouterModule, CoreModule, AppRoutingModule],
   providers: [provideClientHydration(withEventReplay())],
   bootstrap: [AppComponent],
 })
